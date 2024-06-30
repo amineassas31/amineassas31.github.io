@@ -14,16 +14,27 @@ body {
     font-weight: bold;
     color: #4632ff;
     background-color: rgba(20, 36, 183, 0.16);
-
+    display: inline-block;
     padding: 10px 10px;
     border-radius: 5px;
     z-index: 1000;
     font-family: "Mansalva", sans-serif;
     font-weight: 400;
     font-style: normal;
+    cursor: pointer;
+}
+.logo:hover {
+    font-weight: bolder;
 }
 
 .container {
+    max-width: 1000px;
+    margin: 100px auto 40px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.container2 {
     max-width: 1000px;
     margin: 100px auto 20px;
     padding: 0 20px;
@@ -70,10 +81,6 @@ ul li {
 }
 
 .job,
-.education {
-    margin: 20px 0;
-}
-
 footer {
     background-color: #000;
     color: #fff;
@@ -91,45 +98,7 @@ footer {
     font-weight: 400;
     font-style: normal;
 }
-/* Education Cards */
-.education-card {
-    background-color: #1424b7;
-    margin: 20px auto;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s, box-shadow 0.3s;
-    max-width: 400px; /* Limiting maximum width */
-    color: #ffffff;
-    font-family: "Comfortaa", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-}
 
-.education-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-.education-details {
-    text-align: center;
-}
-
-.education-details h3 {
-    margin: 10px 0 5px;
-    font-size: 1.2em;
-}
-
-.education-details p {
-    margin: 0;
-    font-size: 1em;
-}
-.ed {
-    background-clip: text;
-    background-image: linear-gradient(135deg, #009cea, #4632ff);
-    color: transparent;
-}
 .contact {
     background-color: #f62000;
     margin: auto;
@@ -144,6 +113,7 @@ footer {
     font-weight: 400;
     font-style: normal;
     font-size: large;
+    cursor: help;
 }
 .con {
     font-family: "Playwrite ES Deco", cursive;
@@ -154,6 +124,14 @@ footer {
 .tls {
     font-family: "Mansalva", sans-serif;
     font-weight: 400;
+    font-style: normal;
+    width: max-content;
+    display: inline-block;
+    cursor: none;
+}
+.tls:hover {
+    font-family: "Mansalva", sans-serif;
+    font-weight: bold;
     font-style: normal;
 }
 #social-bar {
@@ -183,4 +161,67 @@ footer {
 
 #social-bar a:hover {
     transform: scale(1.1); /* Scales the icon slightly on hover (optional) */
+}
+
+.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 50;
+}
+
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 80px auto;
+    padding: 0 20px;
+    max-width: 100%;
+}
+.card {
+    background: #1424b7;
+    color: white;
+    border-radius: 20px; /* Adjusted border-radius for a rounder look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.635);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 250px;
+    height: 100px;
+    margin: 20px;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.635);
+    font-family: "Mansalva", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.card h2 {
+    margin: 0px 0;
+    font-weight: bold;
+}
+
+.material-symbols-outlined {
+    font-size: 40px; /* Adjusted size for the icons */
+    margin-bottom: 10px;
+    display: inline-block; /* Ensures icons and text are on the same line */
+    line-height: 1; /* Ensures proper vertical alignment */
+}
+a {
+    text-decoration: none;
+}
+.container p {
+    align-self: center;
+}
+.tls .material-symbols-outlined {
+    margin-right: 10px; /* Adjust spacing between icon and text */
+    vertical-align: middle; /* Align icon vertically with text */
 }
