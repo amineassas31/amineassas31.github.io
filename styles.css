@@ -93,9 +93,8 @@ footer {
 .mail {
     text-decoration: none;
     color: #000000;
-    font-family: "Playwrite ES Deco", cursive;
-    font-optical-sizing: auto;
-    font-weight: 400;
+    font-family: "Mansalva", sans-serif;
+
     font-style: normal;
 }
 
@@ -108,17 +107,15 @@ footer {
     transition: transform 0.3s, box-shadow 0.3s;
     max-width: 240px; /* Limiting maximum width */
     color: #ffffff;
-    font-family: "Playwrite ES Deco", cursive;
-    font-optical-sizing: auto;
-    font-weight: 400;
+    font-family: "Mansalva", sans-serif;
+    font-weight: bold;
     font-style: normal;
     font-size: large;
     cursor: help;
 }
 .con {
-    font-family: "Playwrite ES Deco", cursive;
-    font-optical-sizing: auto;
-    font-weight: 400;
+    font-family: "Mansalva", sans-serif;
+
     font-style: normal;
 }
 .tls {
@@ -127,7 +124,7 @@ footer {
     font-style: normal;
     width: max-content;
     display: inline-block;
-    cursor: none;
+    cursor: pointer;
 }
 .tls:hover {
     font-family: "Mansalva", sans-serif;
@@ -224,4 +221,37 @@ a {
 .tls .material-symbols-outlined {
     margin-right: 10px; /* Adjust spacing between icon and text */
     vertical-align: middle; /* Align icon vertically with text */
+}
+.container3 {
+    text-align: center;
+    margin: 80px 0;
+    position: sticky;
+}
+.download-btn {
+    background-color: #ffffff;
+    border: #1424b7;
+    border-style: solid;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: larger;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.635);
+    margin: auto;
+    margin-bottom: 0%;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: max-content;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.container3 a {
+    color: #000;
+}
+.download-btn:hover {
+    background-color: #1424b7;
+    color: #fff;
+    box-shadow: 0 12px 19px rgba(0, 0, 0, 0.635);
 }
