@@ -33,6 +33,13 @@ body {
     padding: 0 20px;
     text-align: center;
 }
+.location-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 
 .container2 {
     max-width: 1000px;
@@ -120,16 +127,38 @@ footer {
 }
 .tls {
     font-family: "Mansalva", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    width: max-content;
-    display: inline-block;
-    cursor: pointer;
-}
-.tls:hover {
-    font-family: "Mansalva", sans-serif;
     font-weight: bold;
     font-style: normal;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block; /* Ensure it fits the content */
+    position: relative; /* Required for the ::after pseudo-element */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.tls::after {
+    content: "Toulouse, France"; /* The new text to display on hover */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: rgb(0, 0, 0); /* Change text color on hover */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* Start hidden */
+    pointer-events: none; /* Allow hover on parent element */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity change */
+}
+
+.tls:hover::after {
+    opacity: 1; /* Show the new text on hover */
+}
+
+.tls:hover {
+    color: transparent; /* Hide the original text by making it transparent */
 }
 #social-bar {
     position: fixed;
