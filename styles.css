@@ -29,10 +29,20 @@ body {
 
 .container {
     max-width: 1000px;
-    margin: 100px auto 40px;
+    margin: 50px auto 40px;
     padding: 0 20px;
     text-align: center;
 }
+.container img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 200px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    object-fit: cover;
+    cursor: auto;
+}
+
 .location-container {
     display: flex;
     flex-direction: column;
