@@ -51,13 +51,6 @@ body {
     text-align: center;
 }
 
-.container2 {
-    max-width: 1000px;
-    margin: 100px auto 20px;
-    padding: 0 20px;
-    text-align: center;
-}
-
 .title {
     font-size: 5em;
     margin: 0;
@@ -104,6 +97,15 @@ footer {
     font-weight: 400;
     font-style: normal;
 }
+.container2 {
+    margin: 0px auto 0px;
+    padding: 20px 20px;
+    text-align: center;
+    background-color: #dcdcfc;
+    border-top-color: #000091;
+    border-top-style: solid;
+}
+
 .mail {
     text-decoration: none;
     color: #000000;
@@ -137,10 +139,10 @@ footer {
     font-weight: bold;
     font-style: normal;
     text-align: center;
-    cursor: pointer;
+    cursor: help;
     display: inline-block; /* Ensure it fits the content */
     position: relative; /* Required for the ::after pseudo-element */
-    transition: color 0.3s ease; /* Smooth transition for color change */
+    transition: all 0.3s ease-in-out; /* Smooth transition for color change */
 }
 
 .tls::after {
@@ -170,7 +172,7 @@ footer {
 .location-container .material-symbols-outlined:hover {
     font-variation-settings: "FILL" 30, "wght" 400, "GRAD" 40, "opsz" 200;
     cursor: pointer;
-    color: #4632ff;
+    color: #000091;
 }
 #social-bar {
     position: fixed;
@@ -178,7 +180,7 @@ footer {
     right: 0; /* Positions the bar at the right edge of the window */
     width: 50px; /* Adjust the width of the bar */
     height: auto; /* Removes fixed height, allowing icons to stack vertically */
-    background-color: #1424b7; /* Set your desired background color */
+    background-color: #000091; /* Set your desired background color */
     color: #ffffff; /* Set the text color for icons */
     display: flex; /* Arranges icons horizontally */
     flex-direction: column; /* Stacks icons vertically */
@@ -214,7 +216,7 @@ footer {
     max-width: 100%;
 }
 .card {
-    background: #1424b7;
+    background: #000091;
     color: white;
     border-radius: 20px; /* Adjusted border-radius for a rounder look */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.635);
@@ -265,34 +267,33 @@ a {
 }
 .container3 {
     text-align: center;
-    margin: 80px 0;
+    margin: 80px 0px 0px 0px;
     position: sticky;
-}
-.download-btn {
-    background-color: #ffffff;
-    border: #1424b7;
-    border-style: solid;
-    font-optical-sizing: auto;
-    font-weight: 900;
-    font-style: normal;
-    font-size: larger;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.635);
-    margin: auto;
-    margin-bottom: 0%;
-    border-radius: 40px;
-    display: flex;
-    flex-direction: column;
     align-items: center;
+    display: flexbox;
+    flex-direction: column;
+    vertical-align: middle;
+}
+
+.download-btn {
+    background-color: #000091;
+    color: white;
+    margin: auto;
     width: max-content;
-    padding: 20px;
-    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 5px 20px;
+    display: inline-flex;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
 .container3 a {
-    color: #000;
+    text-decoration: none;
 }
-.download-btn:hover {
-    background-color: #1424b7;
-    color: #fff;
-    box-shadow: 0 12px 19px rgba(0, 0, 0, 0.635);
+.container3 t {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bolder;
+    font-size: x-large;
+}
+.container3 .material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 0, "opsz" 50;
 }

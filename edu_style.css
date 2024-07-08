@@ -53,7 +53,7 @@ footer {
 }
 /* Education Cards */
 .education-card {
-    background-color: #1424b7;
+    background-color: #000091;
     margin: 20px auto;
     padding: 15px;
     border-radius: 20px;
@@ -91,9 +91,7 @@ footer {
     font-size: 1em;
 }
 .ed {
-    background-clip: text;
-    background-image: linear-gradient(135deg, #009cea, #4632ff);
-    color: transparent;
+    color: #000091;
     text-align: center;
 }
 #social-bar {
@@ -102,7 +100,7 @@ footer {
     right: 0; /* Positions the bar at the right edge of the window */
     width: 50px; /* Adjust the width of the bar */
     height: auto; /* Removes fixed height, allowing icons to stack vertically */
-    background-color: #1424b7; /* Set your desired background color */
+    background-color: #000091; /* Set your desired background color */
     color: #ffffff; /* Set the text color for icons */
     display: flex; /* Arranges icons horizontally */
     flex-direction: column; /* Stacks icons vertically */
