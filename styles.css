@@ -88,15 +88,6 @@ ul li {
 }
 
 .job,
-footer {
-    background-color: #000;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-    font-family: "Mansalva", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
 .container2 {
     margin: 0px auto 0px;
     padding: 20px 20px;
@@ -203,7 +194,7 @@ footer {
     transform: scale(1.1); /* Scales the icon slightly on hover (optional) */
 }
 
-.material-symbols-outlined {
+.location-container .material-symbols-outlined {
     font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 50;
 }
 
@@ -216,63 +207,60 @@ footer {
     max-width: 100%;
 }
 .card {
-    background: #000091;
-    color: white;
-    border-radius: 20px; /* Adjusted border-radius for a rounder look */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.635);
-    transition: transform 0.3s, box-shadow 0.3s;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
     width: 250px;
-    height: 100px;
+    height: 200px;
     margin: 20px;
-    padding: 30px;
+    padding: 10px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: "Comfortaa", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
+    font-family: "Mansalva", sans-serif;
     cursor: pointer;
+    border-style: solid;
+    border-color: #c5c5c5;
+    border-width: 1.5px;
+    border-bottom-color: #000091;
+    border-bottom-width: 4px;
+    box-sizing: border-box;
 }
 
 .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.635);
-    font-family: "Mansalva", sans-serif;
-    font-weight: bold;
-    font-style: normal;
+    background-color: #f0f0ff;
 }
 
 .card h2 {
-    margin: 0px 0;
     font-weight: bold;
 }
-
-.material-symbols-outlined {
-    font-size: 40px; /* Adjusted size for the icons */
-    margin-bottom: 10px;
-    display: inline-block; /* Ensures icons and text are on the same line */
-    line-height: 1; /* Ensures proper vertical alignment */
+.card-logo-box {
+    color: #000091;
+    width: 100%;
+    height: 50%;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
+.card .material-symbols-outlined {
+    font-size: 50px;
+    font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 50;
+}
+
 a {
     text-decoration: none;
 }
 .container p {
     align-self: center;
 }
-.tls .material-symbols-outlined {
-    margin-right: 10px; /* Adjust spacing between icon and text */
-    vertical-align: middle; /* Align icon vertically with text */
-}
+
 .container3 {
+    margin: auto;
     text-align: center;
-    margin: 80px 0px 0px 0px;
-    position: sticky;
-    align-items: center;
-    display: flexbox;
-    flex-direction: column;
-    vertical-align: middle;
+    width: max-content;
+    justify-content: center;
 }
 
 .download-btn {
@@ -281,19 +269,28 @@ a {
     margin: auto;
     width: max-content;
     padding: 5px 20px;
-    display: inline-flex;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-radius: 50px;
+    border-width: 1.5px;
+    border-style: solid;
+    transition: all 0.3s;
+}
+.download-btn:hover {
+    background-color: #fff;
+    color: #000091;
 }
 
 .container3 a {
     text-decoration: none;
 }
 .container3 t {
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: bolder;
-    font-size: x-large;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }
 .container3 .material-symbols-outlined {
     font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 0, "opsz" 50;
+    margin-bottom: 12px;
+    display: inline-block; /* Ensures icons and text are on the same line */
+    line-height: 1; /* Ensures proper vertical alignment */
 }
