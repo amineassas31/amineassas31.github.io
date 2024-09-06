@@ -9,11 +9,16 @@ body {
 .dev {
     font-weight: 900;
     cursor: default;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 .dev:hover {
-    color: #000091;
-    text-decoration: underline;
+    color: #fff;
+    -webkit-text-stroke: 1px black;
+
 }
+
 
 .logo {
     position: fixed;
@@ -360,6 +365,7 @@ a {
     width: max-content;
     border-radius: 5px;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .card-logo-box {
@@ -385,20 +391,44 @@ a {
     margin: 0; /* Remove margin */
 }
 .competences-container {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0 10%;
 
 
 }
-.competence-title {
-    font-family: "Mansalva", sans-serif;
-    font-weight: bolder;
-    font-style: normal;
-    background: #000091;
-    width: max-content;
-    color: white;
-    padding: 10px;
+.competence-group {
+    background-color: #1e1f22;
+    padding: 10px 10px ;
+    margin: 2px 10px;
+    box-shadow: 0 6px 8px rgb(30, 31, 34);
     border-radius: 10px;
 }
+.competence-title {
+    color: chartreuse;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.skills-list{
+    color : #ffffff;
+    font-family: "Pixelify Sans", "Sakkal Majalla", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.dollar-prompt{
+    font-weight: lighter;
+    font-size: medium;
+    color: chartreuse;
+}
+.prompt {
+    font-weight: lighter;
+    font-size: small;
+    color: chartreuse;
+}
+.cmd-head{
+    color: #939393;
+    font-family: "Pixelify Sans", "Sakkal Majalla", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
 
 
+}
