@@ -1,0 +1,181 @@
+/* Reset some default browser styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #161922;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style for the form */
+form {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    width: 100%;
+    max-width: 600px;
+}
+
+#search {
+    padding: 12px;
+    /*border: 1px solid #00a4ff;*/
+    border-radius: 5px 0 0 5px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#search::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    background-color: #00a4ff;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.01s;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+button:hover {
+    background-color: #0059ff;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Style for the results section */
+#resultNum {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+    color: white;
+    border: 1px solid #00a4ff;
+    border-radius: 5px;
+
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+/* Style for the list of anime */
+#list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+#list div {
+
+    background: linear-gradient(356deg, rgba(0,166,255,0.3087359943977591) 0%, rgba(255,255,255,0) 70%);
+    border: 1px solid #00a6ff;
+    border-radius: 8px;
+    color: #ffffff;
+    margin: 15px;
+    padding: 10px;
+    width: 250px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    font-style: normal;
+
+}
+#list div h1 {
+    font-family: "Sixtyfour Convergence", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-size: 20px;
+    font-style: normal;
+}
+#list div:hover {
+    transform: scale(1.05);
+    background: linear-gradient(356deg, rgba(0,166,255,0.3087359943977591) 0%, rgba(255,255,255,0) 90%);
+}
+
+/* Style for the images */
+#list img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+#type {
+    display: block; /* Ensures select is on a new line */
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    width: 100%; /* Full width for consistent alignment */
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    margin-bottom: 120px; /* Space above the select */
+    width: 10%;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#type option {
+    background-color: #121419; /* Match background color */
+    color: #ffffff; /* Match text color */
+}
+
+#type {
+    box-shadow: 0 0 1px #00a4ff;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#type:focus {
+    box-shadow: 0px 0px 8px -1px #00a4ff;
+}
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #search {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    #list div {
+        width: 90%;
+    }
+}
