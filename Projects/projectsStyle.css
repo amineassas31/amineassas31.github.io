@@ -32,10 +32,11 @@ body {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-    background-color: #121418;
+    background-color: rgb(8 0 23);
+    border-color: rgb(78 68 98);
     border-style: solid;
     border-width: 1.5px;
-    border-color: #232930;
+
     border-radius: 10px;
     width: 700px;
     height: auto;
@@ -104,10 +105,10 @@ body {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-    background-color: #121418;
+    background-color: rgb(8 0 23);
+    border-color: rgb(78 68 98);
     border-style: solid;
     border-width: 1.5px;
-    border-color: #232930;
     border-radius: 10px;
     width: 400px;
     height: auto;
