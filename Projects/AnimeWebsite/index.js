@@ -147,7 +147,7 @@ async function manga(searchValue) {
 //-------------------------------------------------------------------
 async function people(searchValue) {
     const response = await fetch(
-        `https://cors-anywhere.herokuapp.com/https://api.jikan.moe/v4/people?q=` +
+        `https://api.jikan.moe/v4/people?q=` +
             searchValue
     );
     const data = await response.json();
