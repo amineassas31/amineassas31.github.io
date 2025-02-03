@@ -50,7 +50,7 @@ async function anime(searchValue) {
 //-------------------------------------------------------------------
 async function characters(searchValue) {
     const response = await fetch(
-        `https://cors-anywhere.herokuapp.com/https://api.jikan.moe/v4/characters?q=` +
+        `https://api.jikan.moe/v4/characters?q=` +
             searchValue
     );
     const data = await response.json();
